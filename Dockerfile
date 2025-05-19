@@ -39,4 +39,4 @@ RUN export GROQ_API_KEY=$(grep GROQ_API_KEY .env | cut -d '=' -f2) && echo "GROQ
 EXPOSE 8000
 
 # Command to run the API server
-CMD ["uvicorn", "backend_api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python3", "backend_api.py"]
